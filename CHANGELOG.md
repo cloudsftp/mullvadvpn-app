@@ -42,6 +42,10 @@ Line wrap the file at 100 chars.                                              Th
 - Fix daemon ending up in blocked state if the user toggled split tunneling without having granted
   Full Disk Access to `mullvad-daemon`. This could only ever be accomplished from the CLI.
 
+## [2025.3-clouds] - 2025-01-27
+### Chaned
+- Disable split tunneling
+
 
 ## [2025.2] - 2025-01-08
 ### Fixed
