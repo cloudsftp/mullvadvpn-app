@@ -20,3 +20,7 @@ export function getDownloadUrl(suggestedIsBeta: boolean): string {
 
   return url;
 }
+
+export function getCustomVersionRepositoryUrl(): string {
+  return 'https://github.com/cloudsftp/mullvadvpn-app/';
+}

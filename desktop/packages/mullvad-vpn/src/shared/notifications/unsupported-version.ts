@@ -1,5 +1,5 @@
 import { messages } from '../../shared/gettext';
-import { getDownloadUrl } from '../version';
+import { getCustomVersionRepositoryUrl, getDownloadUrl } from '../version';
 import {
   InAppNotification,
   InAppNotificationProvider,
@@ -42,12 +42,12 @@ export class UnsupportedVersionNotificationProvider
 
   public getInAppNotification(): InAppNotification {
     return {
-      indicator: 'error',
-      title: messages.pgettext('in-app-notifications', 'UNSUPPORTED VERSION'),
+      indicator: 'success',
+      title: messages.pgettext('in-app-notifications', 'CUSTOM VERSION'),
       subtitle: this.getMessage(),
       action: {
         type: 'open-url',
-        url: getDownloadUrl(this.context.suggestedIsBeta ?? false),
+        url: getCustomVersionRepositoryUrl(),
       },
     };
   }
@@ -56,7 +56,7 @@ export class UnsupportedVersionNotificationProvider
     // TRANSLATORS: The in-app banner and system notification which are displayed to the user when the running app becomes unsupported.
     return messages.pgettext(
       'notifications',
-      'Your privacy might be at risk with this unsupported app version. Please update now.',
+      "You are using a custom version of Mullvad with code name 'clouds'.",
     );
   }
 }
