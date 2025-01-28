@@ -42,6 +42,10 @@ Line wrap the file at 100 chars.                                              Th
 - Fix daemon ending up in blocked state if the user toggled split tunneling without having granted
   Full Disk Access to `mullvad-daemon`. This could only ever be accomplished from the CLI.
 
+### Removed
+- Remove Google's resolvers from encrypted DNS proxy.
+
+>>>>>>> main
 ## [2025.3-clouds] - 2025-01-27
 ### Chaned
 - Disable split tunneling
