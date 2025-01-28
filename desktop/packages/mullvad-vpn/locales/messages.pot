@@ -954,7 +954,7 @@ msgid "Try out the newest beta version (%(version)s)."
 msgstr ""
 
 msgctxt "in-app-notifications"
-msgid "UNSUPPORTED VERSION"
+msgid "CUSTOM VERSION"
 msgstr ""
 
 msgctxt "in-app-notifications"
@@ -1260,7 +1260,7 @@ msgstr ""
 
 #. The in-app banner and system notification which are displayed to the user when the running app becomes unsupported.
 msgctxt "notifications"
-msgid "Your privacy might be at risk with this unsupported app version. Please update now."
+msgid "You are using a custom version of Mullvad with code name 'clouds'."
 msgstr ""
 
 #. Title label in navigation bar
